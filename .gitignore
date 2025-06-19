@@ -1,6 +1,56 @@
 # 当前目录下的zip文件、jks都不需要上传
 # 然后LearnAndroid和MemoryLeakAndAnr都是Android项目，它们里面也有git文件
 # 所以这下面的.gitignore文件是针对当前目录的
+# *.iml
+# .gradle
+# /local.properties
+# /.idea/caches
+# /.idea/libraries
+# /.idea/modules.xml
+# /.idea/workspace.xml
+# /.idea/navEditor.xml
+# /.idea/assetWizardSettings.xml
+# .DS_Store
+# /build
+# /captures
+# .externalNativeBuild
+# .cxx
+# local.properties
+# 上面的是对子项目里面的配置
+# 也就是LearnAndroid和MemoryLeakAndAnr的.gitignore文件
+# 这里我需要写到当前目录的.gitignore文件下
+
+./LearnAndroid/*.iml
+./LearnAndroid/.gradle
+./LearnAndroid/local.properties
+./LearnAndroid/.idea/caches
+./LearnAndroid/.idea/libraries
+./LearnAndroid/.idea/modules.xml
+./LearnAndroid/.idea/workspace.xml
+./LearnAndroid/.idea/navEditor.xml
+./LearnAndroid/.idea/assetWizardSettings.xml
+./LearnAndroid/.DS_Store
+./LearnAndroid/build
+./LearnAndroid/captures
+./LearnAndroid/.externalNativeBuild
+./LearnAndroid/.cxx
+./LearnAndroid/local.properties 
+
+./MemoryLeakAndAnr/*.iml
+./MemoryLeakAndAnr/.gradle
+./MemoryLeakAndAnr/local.properties
+./MemoryLeakAndAnr/.idea/caches
+./MemoryLeakAndAnr/.idea/libraries
+./MemoryLeakAndAnr/.idea/modules.xml
+./MemoryLeakAndAnr/.idea/workspace.xml
+./MemoryLeakAndAnr/.idea/navEditor.xml
+./MemoryLeakAndAnr/.idea/assetWizardSettings.xml
+./MemoryLeakAndAnr/.DS_Store
+./MemoryLeakAndAnr/build
+./MemoryLeakAndAnr/captures
+./MemoryLeakAndAnr/.externalNativeBuild
+./MemoryLeakAndAnr/.cxx
+./MemoryLeakAndAnr/local.properties 
 
 *.zip
 *.jks
