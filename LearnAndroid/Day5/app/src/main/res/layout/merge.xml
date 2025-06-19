@@ -1,0 +1,12 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+        android:id="@+id/testlayout_button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试布局中Button1"/>
+    <Button
+        android:id="@+id/testlayout_button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试布局第二个Button2"/>
+</merge>

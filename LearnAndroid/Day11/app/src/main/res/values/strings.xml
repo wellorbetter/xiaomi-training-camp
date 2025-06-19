@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Day11</string>
+    <string name="poem_0_poem_name">唐多令·芦叶满汀洲</string>
+    <string name="poem_0_poet_name">刘过</string>
+    <string name="poem_0_context">欲买桂花同载酒，终不似，少年游。</string>
+
+    <string name="poem_1_poem_name">将进酒</string>
+    <string name="poem_1_poet_name">李白</string>
+    <string name="poem_1_context">人生得意须尽欢，莫使金樽空对月</string>
+
+    <string name="poem_2_poem_name">滕王阁序</string>
+    <string name="poem_2_poet_name">王勃</string>
+    <string name="poem_2_context">穷且益坚，不坠青云之志</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

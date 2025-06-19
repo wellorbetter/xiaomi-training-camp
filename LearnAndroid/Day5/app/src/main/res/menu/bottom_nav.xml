@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/home" android:checked="true" android:icon="@drawable/home" android:title="HOME"/>
+        <item android:id="@+id/person" android:checked="false" android:icon="@drawable/person" android:title="PERSON"/>
+        <item android:id="@+id/be_on_class" android:checked="false" android:icon="@drawable/be_on_class" android:title="CLASS"/>
+        <item android:id="@+id/be_on_class1" android:checked="false" android:icon="@drawable/be_on_class" android:title="CLASS1"/>
+        <item android:id="@+id/be_on_class2" android:checked="false" android:icon="@drawable/be_on_class" android:title="CLASS2"/>
+        <item android:id="@+id/be_on_class3" android:checked="false" android:icon="@drawable/be_on_class" android:title="CLASS3"/>
+        <item android:id="@+id/be_on_class4" android:checked="false" android:icon="@drawable/be_on_class" android:title="CLASS3"/>
+        <item android:id="@+id/help_center" android:checked="false" android:icon="@drawable/be_on_class" android:title="help_center"/>
+    </group>
+</menu>

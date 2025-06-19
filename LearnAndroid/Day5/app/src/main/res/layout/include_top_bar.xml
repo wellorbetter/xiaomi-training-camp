@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="50dp"
+        android:background="@null"
+        android:src="@drawable/back_black"
+        android:id="@+id/ib_back"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:text="小米账号帮助中心"
+        android:textSize="20sp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintTop_toTopOf="@id/ib_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/ib_back"
+        app:layout_constraintStart_toEndOf="@id/ib_back"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+
+</merge>

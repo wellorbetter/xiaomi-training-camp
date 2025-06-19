@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single" android:id="@+id/nav">
+        <item android:checked="true" android:id="@+id/tableInput" android:icon="@drawable/table_input"
+            android:title="清单" />
+        <item android:checked="false" android:id="@+id/list" android:icon="@drawable/list"
+            android:title="列表" />
+        <item android:checked="false" android:id="@+id/improvedList" android:icon="@drawable/list_improved"
+            android:title="改进的列表" />
+    </group>
+</menu>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/search_back"
+        >
+        <ImageView
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/iv_search"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:paddingLeft="5dp"
+            android:layout_width="30dp"
+            android:src="@drawable/search"
+            android:layout_height="30dp"/>
+        <EditText android:layout_width="0dp"
+            android:maxLines="1"
+            android:background="@null"
+            app:layout_constraintTop_toTopOf="@+id/iv_search"
+            app:layout_constraintBottom_toBottomOf="@id/iv_search"
+            app:layout_constraintStart_toEndOf="@id/iv_search"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="请输入问题关键词"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

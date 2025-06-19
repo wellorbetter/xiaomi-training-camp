@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:checked="true" android:id="@+id/home" android:title="主页" android:icon="@drawable/home_select"/>
+        <item android:checked="false" android:id="@+id/personal" android:title="个人中心" android:icon="@drawable/personal_select"/>
+    </group>
+</menu>

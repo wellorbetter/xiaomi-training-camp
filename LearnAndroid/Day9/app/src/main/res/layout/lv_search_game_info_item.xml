@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@+id/tv_search_game_info_item"
+    android:padding="5dp"
+    android:gravity="center"
+    android:layout_margin="5dp"
+    android:text="tv_search_game_info_item"
+    android:layout_gravity="center"
+    android:background="@drawable/lv_search_game_info_item_background"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

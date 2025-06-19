@@ -1,0 +1,81 @@
+package com.example.leanandroid.Activities.Launch;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+
+import com.example.leanandroid.Activities.MainActivity;
+import com.example.leanandroid.R;
+
+public class Standard extends AppCompatActivity implements View.OnClickListener {
+    String TAG = "Standard";
+    Button button, bt_self;
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        Log.d(TAG, "onNewIntent: ");
+        super.onNewIntent(intent);
+    }
+
+    @Override
+    protected void onPause() {
+        Log.d(TAG, "onPause: ");
+        super.onPause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        Log.d(TAG, "onDestroy: ");
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onResume() {
+        Log.d(TAG, "onResume: ");
+        super.onResume();
+    }
+
+    @Override
+    protected void onStart() {
+        Log.d(TAG, "onStart: ");
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        Log.d(TAG, "onStop: ");
+        super.onStop();
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        Log.d(TAG, "onCreate: ");
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main2);
+        button = findViewById(R.id.bt);
+        bt_self = findViewById(R.id.bt_self);
+        bt_self.setOnClickListener(this);
+        button.setOnClickListener(this);
+    }
+
+    @Override
+    protected void onRestart() {
+        Log.d(TAG, "onRestart: ");
+        super.onRestart();
+    }
+
+    @Override
+    public void onClick(View view) {
+        if (view.getId() == R.id.bt) {
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        } else if (view.getId() == R.id.bt_self) {
+            Intent intent = new Intent(this, Standard.class);
+            startActivity(intent);
+        }
+    }
+}

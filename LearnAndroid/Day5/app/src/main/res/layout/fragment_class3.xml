@@ -1,0 +1,137 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <!-- 约束布局成链 -->
+   <!-- Views in horizontal chain 1 -->
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/cons1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toTopOf="@+id/cons2"
+       app:layout_constraintVertical_chainStyle="spread"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent">
+
+      <TextView
+          android:id="@+id/textView1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="TextView 1"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintEnd_toStartOf="@id/textView2"
+          app:layout_constraintHorizontal_chainStyle="spread"
+          android:layout_marginEnd="8dp"/>
+
+      <TextView
+          android:id="@+id/textView2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="TextView 2"
+          app:layout_constraintStart_toEndOf="@id/textView1"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintEnd_toStartOf="@id/textView3"
+          android:layout_marginStart="8dp"
+          android:layout_marginEnd="8dp"/>
+
+      <TextView
+          android:id="@+id/textView3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="TextView 3"
+          app:layout_constraintStart_toEndOf="@id/textView2"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:layout_marginStart="8dp"/>
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <!-- Views in horizontal chain 2 -->
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:id="@+id/cons2"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/cons1"
+       app:layout_constraintBottom_toTopOf="@+id/cons3"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent">
+
+      <TextView
+          android:id="@+id/textView21"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="TextView 1"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintEnd_toStartOf="@id/textView22"
+          app:layout_constraintHorizontal_chainStyle="spread"
+          android:layout_marginEnd="8dp"/>
+
+      <TextView
+          android:id="@+id/textView22"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="TextView 2"
+          app:layout_constraintStart_toEndOf="@id/textView21"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintEnd_toStartOf="@id/textView23"
+          android:layout_marginStart="8dp"
+          android:layout_marginEnd="8dp"/>
+
+      <TextView
+          android:id="@+id/textView23"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="TextView 3"
+          app:layout_constraintStart_toEndOf="@id/textView22"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:layout_marginStart="8dp"/>
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <!-- Views in horizontal chain 3 -->
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/cons3"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/cons2"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent">
+
+      <TextView
+          android:id="@+id/textView31"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="TextView 1"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintEnd_toStartOf="@id/textView32"
+          app:layout_constraintHorizontal_chainStyle="spread"
+          android:layout_marginEnd="8dp"/>
+
+      <TextView
+          android:id="@+id/textView32"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="TextView 2"
+          app:layout_constraintStart_toEndOf="@id/textView31"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintEnd_toStartOf="@id/textView33"
+          android:layout_marginStart="8dp"
+          android:layout_marginEnd="8dp"/>
+
+      <TextView
+          android:id="@+id/textView33"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="TextView 3"
+          app:layout_constraintStart_toEndOf="@id/textView32"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:layout_marginStart="8dp"/>
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

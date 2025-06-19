@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".Fragment.ImprovedRVFragment">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+
+            android:inputType="numberSigned"
+            android:maxLength="4" />
+        <!-- inputType="numberSigned  这里是个坑点 不是number-->
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/bt_add"
+            android:background="@drawable/button"
+            android:layout_width="80dp"
+            android:text="add"
+            android:layout_height="50dp"/>
+        <Button
+            android:id="@+id/bt_remove"
+            android:text="remove"
+            android:layout_margin="10dp"
+            android:background="@drawable/button"
+            android:layout_width="80dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
