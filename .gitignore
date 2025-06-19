@@ -1,0 +1,27 @@
+# 当前目录下的zip文件、jks都不需要上传
+# 然后LearnAndroid和MemoryLeakAndAnr都是Android项目，它们里面也有git文件
+# 所以这下面的.gitignore文件是针对当前目录的
+
+*.zip
+*.jks
+*.iml
+*.hprof
+*.log
+*.apk
+*.ap_
+*.dex
+*.class
+*.so
+*.jar
+*.war
+*.ear
+*.swp
+*.swo
+*.swm
+*.swp
+*.swo
+*.swm
+*.bak
+*.tmp
+*.orig
+*.old
